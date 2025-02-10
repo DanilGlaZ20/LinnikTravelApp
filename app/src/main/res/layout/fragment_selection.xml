@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.338" />
 
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="415dp"
         android:layout_height="407dp"
         android:layout_marginTop="15dp"
@@ -58,20 +58,54 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/firstRoute"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/btn_park" />
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/secondRoute"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <ImageButton
+                    android:id="@+id/firstRoute"
+                    android:layout_width="250dp"
+                    android:layout_height="363dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_park" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/text"
+                    android:textColor="@color/white"
+                    android:text="Москва-для любителей природы" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/btn_gallery" />
+                android:paddingLeft="40dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/secondRoute"
+                    android:layout_width="250dp"
+                    android:layout_height="363dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_gallery" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/text"
+                    android:textColor="@color/white"
+                    android:text="От классики до модерн-арта" />
+            </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

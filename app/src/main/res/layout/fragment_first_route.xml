@@ -1,14 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_color"
     tools:context=".fragment.FirstRouteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Первый маршрут" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/head_name"
+        android:layout_width="344dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/header"
+        android:text="Москва-для любителей природы"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <ScrollView
+        android:layout_width="383dp"
+        android:layout_height="483dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:fontFamily="@font/text"
+                android:text="Старт: Метро Александровский сад/Библиотека им.Ленина
+                              \nФиниш: Метро Ломоносовский проспект
+                              \nВремя≈2ч.15мин.
+                              \nРасстояние-11км."
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/startTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:fontFamily="@font/text"
+                android:text="Выйдя из метро отправляемся в Александровский сад"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Alex"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/alex_gard" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="далее отправляемся в парк Музеон,"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Museon"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/museon_gard" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="следом в парк Горького,"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Gorkiy"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/gorkiy_park" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="дальше в Нескучный сад"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Nescuch"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/neskuc_gard" />
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="после посмотреть на Андреевский пруд,"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Andrew"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/andrew_water" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="затем прогуляться по Воробьевым горам"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Bird"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/bird" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="потом в Ботанический сад МГУ"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/Botanic"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/botanic_mgu" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="финальная точка парк перед посольством КНР и совсем рядом находим метро."
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/China"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/china_park" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="Этот маршрут хорош тем , что он сочетает в себе сразу несколько лучших по нашему мнению ,хоть и не самых больших, парков Москвы, и подойдет как тем кто только начал ценить природные места, так и для тех кто любит их давно."
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/text"
+                android:text="Прогулка по нему точно останется у вас в памяти на долго."
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
