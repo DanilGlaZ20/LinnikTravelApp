@@ -30,10 +30,19 @@
         android:id="@+id/firstRouteFragment"
         android:name="com.danyglaz.linniktravelapp.fragment.FirstRouteFragment"
         android:label="fragment_first_route"
-        tools:layout="@layout/fragment_first_route" />
+        tools:layout="@layout/fragment_first_route" >
+        <action
+            android:id="@+id/action_firstRouteFragment_to_parkGpsFragment"
+            app:destination="@id/parkGpsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondRouteFragment"
         android:name="com.danyglaz.linniktravelapp.fragment.SecondRouteFragment"
         android:label="fragment_second_route"
         tools:layout="@layout/fragment_second_route" />
+    <fragment
+        android:id="@+id/parkGpsFragment"
+        android:name="com.danyglaz.linniktravelapp.fragment.ParkGpsFragment"
+        android:label="fragment_park_gps"
+        tools:layout="@layout/fragment_park_gps" />
 </navigation>

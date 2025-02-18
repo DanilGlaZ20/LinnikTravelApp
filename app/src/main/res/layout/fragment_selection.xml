@@ -64,10 +64,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/firstRoute"
-                    android:layout_width="250dp"
-                    android:layout_height="363dp"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_park" />
 
@@ -77,8 +77,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/text"
-                    android:textColor="@color/white"
-                    android:text="Москва-для любителей природы" />
+                    android:text="Москва-для любителей природы"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -88,10 +89,10 @@
                 android:paddingLeft="40dp"
                 android:orientation="vertical">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/secondRoute"
-                    android:layout_width="250dp"
-                    android:layout_height="363dp"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_gallery" />
 
@@ -101,8 +102,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/text"
-                    android:textColor="@color/white"
-                    android:text="От классики до модерн-арта" />
+                    android:text="От классики до модерн-арта"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
         </LinearLayout>

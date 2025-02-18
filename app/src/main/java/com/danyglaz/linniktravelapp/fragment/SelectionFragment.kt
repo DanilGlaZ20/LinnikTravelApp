@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
+import androidx.fragment.app.findFragment
 import androidx.navigation.fragment.findNavController
 import com.danyglaz.linniktravelapp.R
 
@@ -16,15 +18,14 @@ class SelectionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_selection, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val firstRouteFragment=view.findViewById<ImageButton>(R.id.firstRoute)
-        val secondRouteFragment=view.findViewById<ImageButton>(R.id.secondRoute)
+       val firstRouteFragment=view.findViewById<ImageView>(R.id.firstRoute)
+        val secondRouteFragment=view.findViewById<ImageView>(R.id.secondRoute)
         val controller=findNavController()
-        firstRouteFragment.setOnClickListener {controller.navigate(R.id.firstRouteFragment)  }
+        firstRouteFragment.setOnClickListener { controller.navigate(R.id.firstRouteFragment) }
         secondRouteFragment.setOnClickListener { controller.navigate(R.id.secondRouteFragment) }
 
     }

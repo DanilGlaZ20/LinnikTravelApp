@@ -38,7 +38,7 @@ android {
 dependencies {
     implementation("androidx.navigation:navigation-fragment:2.8.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.8.6")
-
+    implementation ("com.yandex.android:maps.mobile:4.5.0-full")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")

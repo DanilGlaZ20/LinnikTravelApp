@@ -26,6 +26,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043" />
 
+    <TextView
+        android:id="@+id/parkgps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Открыть на карте->"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
     <ScrollView
         android:layout_width="383dp"
         android:layout_height="483dp"
@@ -61,9 +75,9 @@
                 android:id="@+id/startTravel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="25dp"
                 android:fontFamily="@font/text"
-                android:text="Выйдя из метро отправляемся в Александровский сад"
+                android:paddingTop="25dp"
+                android:text=" Выйдя из метро отправляемся в Александровский сад"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -78,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="далее отправляемся в парк Музеон,"
+                android:text="  далее отправляемся в парк Музеон,"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -93,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="следом в парк Горького,"
+                android:text=" следом в парк Горького,"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -108,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="дальше в Нескучный сад"
+                android:text=" дальше в Нескучный сад"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -124,7 +138,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="после посмотреть на Андреевский пруд,"
+                android:text=" после посмотреть на Андреевский пруд,"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -139,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="затем прогуляться по Воробьевым горам"
+                android:text=" затем прогуляться по Воробьевым горам"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -154,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/text"
-                android:text="потом в Ботанический сад МГУ"
+                android:text=" потом в Ботанический сад МГУ"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -206,5 +220,7 @@
 
         </LinearLayout>
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
